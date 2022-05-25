@@ -1,0 +1,182 @@
+body    {
+    margin: 0;
+    /* font-family: 'Kaushan Script', cursive; */
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 15px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+*,
+*::before,
+*::after   {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6  {
+    margin: 0;
+}
+/* Container */
+.container  {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Intro */
+.intro  {
+    display: flex;/*h1 h2 по центру*/
+    flex-direction: column;/*h1 h2 по центру*/
+    justify-content: center;/*h1 h2 по центру*/
+    width: 100%;
+    height: 1000px;/*100hv Высота 100% экрана посетителя*/
+    background: url("../image/intro.jpg") center center/cover no-repeat;
+}
+
+.intro_inner    {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;/*выравнивание по центру*/
+    text-align: center;/*кнопка и заголовки по центру*/
+}
+.intro_title    {
+    font-size: 150px;
+    line-height: 140px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.intro_title:after {/*полоска под h1*/
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin: 60px auto;/*выравнивание по центру*/
+
+}
+
+.intro_subtitle {
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script';
+    font-size: 72px;
+    color: #ffffff;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    position: absolute;/*помещает все внутрь блока*/
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding-top: 30px;
+}
+.header_inner   {/*лого и навигация по бокам справа и слева*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo    {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Nav */
+.nav    {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.nav_link   {
+    position: relative;/*для подчеркивания*/
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color .1s linear;
+
+}
+.nav_link:after    {/*подчеркивание при наведении*/
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    background: #fce38a;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s linear;
+}
+.nav_link:hover {
+    color: #fce38a;
+}
+.nav_link:hover::after {
+    display: block;
+    opacity: 1;
+}
+/* Button */
+.btn    {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    padding: 15px 33px;
+    transition: background .2s linear;
+    transition: transform .2s linear;
+    
+    }
+.btn:hover  {
+    background-color: white;
+    color:#e79484;
+    transform: scale(1.1); 
+}
+/* Slider */
+.slider {
+    margin-top: 160px;
+}
+.slider_inner   {
+    display: flex;/* в один ряд */
+    justify-content: space-between;
+
+}
+.slider_item   {
+    position: relative;/*частично закрасить белую полоску*/
+    width: 23%;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 20px 0;
+    border-top: 3px solid #fff;
+    opacity: .7;
+}
+.slider_num .active {
+    opacity: 1;
+}
+.slider_num.active::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #f38181;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+}
+.slider_num    {
+    font-size: 24px;
+    font-weight: 700;
+}
