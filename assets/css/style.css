@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6  {
 .slider_num .active {
     opacity: 1;
 }
-.slider_num.active::before {
+.slider_num.active:before {
     content: "";
     display: block;
     width: 70px;
