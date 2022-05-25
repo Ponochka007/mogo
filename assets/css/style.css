@@ -229,7 +229,7 @@ h1, h2, h3, h4, h5, h6  {
     width: 380px;
     position: relative;
 
-    /* background-color: #95e1d3; */
+    background-color: #95e1d3;
 }
 
 .about_item:hover .about_image {
