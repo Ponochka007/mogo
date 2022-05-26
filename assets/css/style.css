@@ -43,6 +43,7 @@ hr  {
 }
 
 .intro_inner    {
+    padding-top: 150px;
     width: 100%;
     max-width: 880px;
     margin: 0 auto;/*выравнивание по центру*/
