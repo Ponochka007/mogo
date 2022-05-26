@@ -447,6 +447,7 @@ hr  {
 }
 .reviews    {
     padding: 0 110px;
+    position: relative;/* Стрелка слайдера */
 }
 .reviews_item   {
     padding-left: 205px;
@@ -482,4 +483,31 @@ hr  {
     height: 3px;
     background-color: #f38181;
     margin-right: 10px;
+}
+
+.reviews_btn    {/* Стрелки слайдера */
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+}
+.reviews_btn::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #cccccc;
+    border-left: 2px solid #cccccc;
+
+}
+.reviews_btn--prev  {
+    left: 0;
+    transform: rotate(-45deg);
+}
+.reviews_btn--next  {
+    right: 0;
+    transform: rotate(135deg);
 }
