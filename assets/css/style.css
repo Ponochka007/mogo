@@ -368,3 +368,73 @@ hr  {
     right: 0;
     z-index: 1;
 }
+
+/*Service*/
+.wedo   {
+    display: flex;
+}
+.wedo_item  {
+    width: 50%;
+}
+/*Accordion*/
+.accordion_item  {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+.accordion_item.active
+.accordion_content  {
+    display: block;
+}
+.accordion_item.active
+.accordion_header::after    {
+    transform: translateY(-50%) rotate(-45deg);
+    margin-top: 3px;
+}
+.accordion_item.active
+.accordion_header   {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion_header  {
+    position: relative;/*выровнять иконку относительно шапки*/
+    padding: 15px 20px 15px 65px;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+}
+.accordion_header::after    {/*стрелка выпадающее меню*/
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #cccccc;
+    border-right: 2px solid #cccccc;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+    transform: translateY(-50%) rotate(135deg);
+}
+.accordion_icon {/*выровнять иконку относительно шапки*/
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+.accordion_title    {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+}
+.accordion_content  {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+    display: none;/*скрытый контент по умолчанию*/
+    padding: 10px 20px;
+}
