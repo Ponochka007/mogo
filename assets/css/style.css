@@ -197,7 +197,7 @@ hr  {
 .section--devices   {
     height: 830px;
     margin-top: 120px;
-    margin-bottom: 0;
+    margin-bottom: 60px;
     padding-bottom: 0;
     background: url("../image/bg_device.jpg") center center/cover no-repeat;
 }
