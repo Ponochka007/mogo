@@ -243,8 +243,9 @@ hr  {
 
 .card_item {
     width: 380px;
+}
+.card_inner {
     position: relative;/*текст на картинке*/
-
     background-color: #95e1d3;
 }
 
@@ -287,6 +288,25 @@ hr  {
     transform: translate3d(0, -50%, 0);
 
     transition: opacity .2s linear;
+}
+.card_info  {
+    margin-top: 20px;
+    text-align: center;
+}
+.card_name  {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+}
+.card_prof  {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
 }
 
 /*Statistics*/
@@ -513,9 +533,31 @@ hr  {
 }
 
 /* Social */
+.social {
+    display: flex;
+    justify-content: center;/* иконки по центру */
+}
 .social_item {
     background-color: #fce38a;
     border-right: 1px solid #f38181;
-
+    text-decoration: none;
+    color: #f38181;
+    padding: 12px 10px;
+    font-size: 30px;/* размер иконок */
+    line-height: 1;
+    width: 55px;
+    height: 55px;
+    transition: background  .1s linear, color .1s linear;
+}
+.social_item:hover  {
+    color: #ffffff;
+    background-color: #f38181;
+}
+.social_item:last-child {/*убрать границу у поледней иконки*/
+    border-right: 0;
+}
+.logos  {
+    display: flex;
+    justify-content: space-between;
 }
 
