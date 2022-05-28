@@ -796,6 +796,17 @@ hr  {
 }
 .footer_inner   {
     padding-bottom: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_col--first  {
+    width: 40%;
+}
+.footer_col--second {
+    width: 29%;
+}
+.footer_col--third {
+    width: 22%;
 }
 .footer_logo    {
     font-size: 46px;
@@ -846,6 +857,14 @@ hr  {
 }
 .footer_social_content a:hover  {
     color: #3adfc0;
+}
+.footer_title   {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 30px 0;
 }
 
 /* Subscribe */
@@ -898,3 +917,68 @@ hr  {
 .subscribe_btn:focus    {
     outline: 0;
 }
+/* Blogs */
+.blogs_item {
+    display: flex;
+    align-items: center; /* текст посередине от картинки */
+    margin-bottom: 27px;
+}
+.blogs_img  {
+    width: 120px;
+    height: 80px;
+}
+.blogs_content   {
+    padding-left: 20px;
+}
+.blogs_content>div  {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+
+}
+.blogs_content a    {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    text-decoration: none;
+
+}
+.blogs_content a:hover  {
+    text-decoration: underline;
+    font-weight: 700;
+}
+/* Instagram */
+.instagram  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.instagram_item {
+    width: 32%;
+    border-bottom: 1px solid white;
+}
+.instagram_item img {
+    display: block;
+}
+
+/* Copyright */
+.copyright  {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #333333;
+}
+.copyright span   {
+    color: #f38181;
+}
+
