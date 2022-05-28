@@ -28,7 +28,8 @@ hr  {
 /* Container */
 .container  {
     width: 100%;
-    max-width: 1200px;
+    padding: 0 15px;
+    max-width: 1230px;
     margin: 0 auto;
 }
 
@@ -980,5 +981,53 @@ hr  {
 }
 .copyright span   {
     color: #f38181;
+}
+
+
+@media (max-width: 1230px)  {
+    .intro_title {
+        font-size: 120px;
+    }
+    .intro_subtitle {
+        font-size: 60px;
+    }
+
+}
+
+@media (max-width: 990px)  {
+    .intro_title {
+        font-size: 80px;
+    }
+    .intro_subtitle {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width: 770px)  {
+    .nav    {
+        display: none;
+    }
+    .slider_text    {
+        display: none;
+    }
+    .slider_num.active:before   {
+        width: 50%;
+    }
+
+    .section    {
+        padding: 40px 0;
+    }
+
+
+
+}
+
+@media (max-width: 575px)  {
+    .intro_title {
+        font-size: 50px;
+    }
+
+
 }
 
