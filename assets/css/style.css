@@ -789,4 +789,42 @@ hr  {
     margin: 10px auto 0;
     background-color: #f38181;
 }
+/* Footer */
+.footer {
+    background-color: #f8f8f8;
+    padding-top: 75px;
+}
+.footer_logo    {
+    font-size: 46px;
+    font-weight: 700;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+.footer_text    {
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+}
+.footer_social_header   {
+    font-size: 14px;
+    font-weight: 400;
+    border-top: 1px solid #e5e5e5;
+    width: 480px;
+}
+.footer_social_header b {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+}
+.footer_social_content  {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+}
 
